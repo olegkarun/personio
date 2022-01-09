@@ -1,94 +1,98 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
-<div class="personio-show">
-  <f:if condition="{item}">
-    <f:then>
-      <h1>{item.name}</h1>
-      <h2>{item.department} | {item.office}</h2>
-      <div class="informations">
-        <dl class="row">
-          <dt class="col-sm-3"><f:translate key="label.office" /></dt>
-          <dd class="col-sm-9">{item.office}</dd>
+<f:layout name="Default" />
 
-          <dt class="col-sm-3"><f:translate key="label.department" /></dt>
-          <dd class="col-sm-9">{item.department}</dd>
-
-          <dt class="col-sm-3"><f:translate key="label.recruitingCategory" /></dt>
-          <dd class="col-sm-9">{item.recruitingCategory}</dd>
-
-          <dt class="col-sm-3"><f:translate key="label.name" /></dt>
-          <dd class="col-sm-9">{item.name}</dd>
-
-          <dt class="col-sm-3"><f:translate key="label.employmentType" /></dt>
-          <dd class="col-sm-9">{item.employmentType}</dd>
-
-          <dt class="col-sm-3"><f:translate key="label.schedule" /></dt>
-          <dd class="col-sm-9 schedule-{item.schedule}">
-            <f:if condition="{f:translate(key: 'schedule.{item.schedule}')}">
-              <f:then>
-                {f:translate(key: 'schedule.{item.schedule}')}
-              </f:then>
-              <f:else>
-                {settings.translations.schedule.{item.schedule}}
-              </f:else>
-            </f:if>
-          </dd>
-
-          <dt class="col-sm-3"><f:translate key="label.yearsOfExperience" /></dt>
-          <dd class="col-sm-9">{item.yearsOfExperience}</dd>
-
-          <dt class="col-sm-3"><f:translate key="label.keywords" /></dt>
-          <dd class="col-sm-9">{item.keywords}</dd>
-
-          <dt class="col-sm-3"><f:translate key="label.occupation" /></dt>
-          <dd class="col-sm-9 occupation-{item.occupation}">
-            <f:if condition="{f:translate(key: 'schedule.{item.occupation}')}">
-              <f:then>
-                {f:translate(key: 'occupation.{item.occupation}')}
-              </f:then>
-              <f:else>
-                {settings.translations.occupation.{item.occupation}}
-              </f:else>
-            </f:if>
-          </dd>
-
-          <dt class="col-sm-3"><f:translate key="label.occupationCategory" /></dt>
-          <dd class="col-sm-9 occupationCategory-{item.occupationCategory}">
-            <f:if condition="{f:translate(key: 'schedule.{item.occupationCategory}')}">
-              <f:then>
-                {f:translate(key: 'occupationCategory.{item.occupationCategory}')}
-              </f:then>
-              <f:else>
-                {settings.translations.occupationCategory.{item.occupationCategory}}
-              </f:else>
-            </f:if>
-          </dd>
-
-          <dt class="col-sm-3"><f:translate key="label.createdAt" /></dt>
-          <dd class="col-sm-9"><f:format.date format="d.m.Y">{item.createdAt}</f:format.date></dd>
-        </dl>
-      </div>
-      <div class="descriptions">
-        <f:translate key="label.jobDescription" />
-        <f:for each="{item.jobDescriptions.jobDescription}" as="jobDescription" iteration="iterator">
-          <div class="description description-{iterator.cycle}">
-            <h3>{jobDescription.name}</h3>
-            {jobDescription.value -> f:format.raw()}
-          </div>
-        </f:for>
-      </div>
-      <f:link.external uri="{feedUrl.scheme}://{feedUrl.host}/job/{item.id}?display={settings.language}#apply" 
-                       class="btn btn-secondary" target="_blank">
-        <f:translate key="personio.show.btn.apply_now" />
-      </f:link.external>
-    </f:then>
-    <f:else>
-      <f:translate key="personio.message.no_items" />
-    </f:else>
-  </f:if>
-  <f:if condition="{settings.listPageUid}">
-    <f:link.page pageUid="{settings.listPageUid}" class="btn btn-secondary">
-      <f:translate key="personio.show.btn.back" />
-    </f:link.page>
-  </f:if>
-</div>
+<f:section name="content">
+  <div class="personio-show">
+    <f:if condition="{item}">
+      <f:then>
+        <h1>{item.name}</h1>
+        <h2>{item.department} | {item.office}</h2>
+        <div class="informations">
+          <dl class="row">
+            <dt class="col-sm-3"><f:translate key="label.office" /></dt>
+            <dd class="col-sm-9">{item.office}</dd>
+  
+            <dt class="col-sm-3"><f:translate key="label.department" /></dt>
+            <dd class="col-sm-9">{item.department}</dd>
+  
+            <dt class="col-sm-3"><f:translate key="label.recruitingCategory" /></dt>
+            <dd class="col-sm-9">{item.recruitingCategory}</dd>
+  
+            <dt class="col-sm-3"><f:translate key="label.name" /></dt>
+            <dd class="col-sm-9">{item.name}</dd>
+  
+            <dt class="col-sm-3"><f:translate key="label.employmentType" /></dt>
+            <dd class="col-sm-9">{item.employmentType}</dd>
+  
+            <dt class="col-sm-3"><f:translate key="label.schedule" /></dt>
+            <dd class="col-sm-9 schedule-{item.schedule}">
+              <f:if condition="{f:translate(key: 'schedule.{item.schedule}')}">
+                <f:then>
+                  {f:translate(key: 'schedule.{item.schedule}')}
+                </f:then>
+                <f:else>
+                  {settings.translations.schedule.{item.schedule}}
+                </f:else>
+              </f:if>
+            </dd>
+  
+            <dt class="col-sm-3"><f:translate key="label.yearsOfExperience" /></dt>
+            <dd class="col-sm-9">{item.yearsOfExperience}</dd>
+  
+            <dt class="col-sm-3"><f:translate key="label.keywords" /></dt>
+            <dd class="col-sm-9">{item.keywords}</dd>
+  
+            <dt class="col-sm-3"><f:translate key="label.occupation" /></dt>
+            <dd class="col-sm-9 occupation-{item.occupation}">
+              <f:if condition="{f:translate(key: 'schedule.{item.occupation}')}">
+                <f:then>
+                  {f:translate(key: 'occupation.{item.occupation}')}
+                </f:then>
+                <f:else>
+                  {settings.translations.occupation.{item.occupation}}
+                </f:else>
+              </f:if>
+            </dd>
+  
+            <dt class="col-sm-3"><f:translate key="label.occupationCategory" /></dt>
+            <dd class="col-sm-9 occupationCategory-{item.occupationCategory}">
+              <f:if condition="{f:translate(key: 'schedule.{item.occupationCategory}')}">
+                <f:then>
+                  {f:translate(key: 'occupationCategory.{item.occupationCategory}')}
+                </f:then>
+                <f:else>
+                  {settings.translations.occupationCategory.{item.occupationCategory}}
+                </f:else>
+              </f:if>
+            </dd>
+  
+            <dt class="col-sm-3"><f:translate key="label.createdAt" /></dt>
+            <dd class="col-sm-9"><f:format.date format="d.m.Y">{item.createdAt}</f:format.date></dd>
+          </dl>
+        </div>
+        <div class="descriptions">
+          <f:translate key="label.jobDescription" />
+          <f:for each="{item.jobDescriptions.jobDescription}" as="jobDescription" iteration="iterator">
+            <div class="description description-{iterator.cycle}">
+              <h3>{jobDescription.name}</h3>
+              {jobDescription.value -> f:format.raw()}
+            </div>
+          </f:for>
+        </div>
+        <f:link.external uri="{feedUrl.scheme}://{feedUrl.host}/job/{item.id}?display={settings.language}#apply" 
+                         class="btn btn-secondary" target="_blank">
+          <f:translate key="personio.show.btn.apply_now" />
+        </f:link.external>
+      </f:then>
+      <f:else>
+        <f:translate key="personio.message.no_items" />
+      </f:else>
+    </f:if>
+    <f:if condition="{settings.listPageUid}">
+      <f:link.page pageUid="{settings.listPageUid}" class="btn btn-secondary">
+        <f:translate key="personio.show.btn.back" />
+      </f:link.page>
+    </f:if>
+  </div>
+</f:section>
 </html>

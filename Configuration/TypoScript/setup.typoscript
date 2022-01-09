@@ -24,13 +24,12 @@ plugin.tx_personio {
 		listPageUid = {$plugin.tx_personio.settings.listPageUid}
 		showPageUid = {$plugin.tx_personio.settings.showPageUid}
 
-
 		translations {
 			schedule {
 			}
 			occupation {
 			}
-			occupation {
+			occupationCategory {
 			}
 		}
 	}

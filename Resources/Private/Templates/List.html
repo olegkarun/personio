@@ -1,20 +1,24 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
-<div class="personio-list">
-  <f:if condition="{items}">
-    <f:then>
-      <ul class="list-group list-group-flush">
-        <f:for each="{items}" as="item" iteration="iterator">
-          <li class="list-group-item">
-            <f:link.action action="show" pageUid="{settings.showPageUid}" arguments="{uid: item.id}">
-              {item.name}
-            </f:link.action>
-          </li>
-        </f:for>
-      </ul>
-    </f:then>
-    <f:else>
-      <f:translate key="personio.message.no_items" />
-    </f:else>
-  </f:if>
-</div>
+<f:layout name="Default" />
+
+<f:section name="content">
+  <div class="personio-list">
+    <f:if condition="{items}">
+      <f:then>
+        <ul class="list-group list-group-flush">
+          <f:for each="{items}" as="item" iteration="iterator">
+            <li class="list-group-item">
+              <f:link.action action="show" pageUid="{settings.showPageUid}" arguments="{uid: item.id}">
+                {item.name}
+              </f:link.action>
+            </li>
+          </f:for>
+        </ul>
+      </f:then>
+      <f:else>
+        <f:translate key="personio.message.no_items" />
+      </f:else>
+    </f:if>
+  </div>
+</f:section>
 </html>

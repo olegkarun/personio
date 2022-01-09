@@ -25,8 +25,17 @@ composer require pkd/personio
 
 Download and install the [extension][2] with the extension manager module.
 
-### 2.2 Minimal setup
-1) (...)
+### 2.2 Pre-requisite settings on Personio
+1. [Enable the XML-Feed][3] on your career page. After activation the feed is available at the following URL i.e. https://youraccount.jobs.personio.de/xml
+
+### 2.3 Minimal setup
+1) Include the static TypoScript of the extension. 
+2) Create a list plugin on a page
+3) Create a show plugin on a page
+
+**Filtering**
+For filtering, the specification of the feed URL in the plugin is required. Please specify a feed URL and save the plugin first. After saving, the filters are obtained from the Personio feed.
 
 [1]: https://getcomposer.org/
 [2]: https://extensions.typo3.org/extension/personio
+[3]: https://support.personio.de/hc/en-us/articles/207576365-Integrating-Positions-From-Personio-Into-Your-Company-Website-via-XML#publishing-positions-via-xml
