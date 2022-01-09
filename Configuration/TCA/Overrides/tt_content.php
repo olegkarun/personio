@@ -1,14 +1,11 @@
 <?php
-
-use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
-
 defined('TYPO3') or die();
 
 (static function() {
    
    // List Plugin
    $pluginSignature = 'personio_list';
-   ExtensionUtility::registerPlugin(
+   \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
       'Personio',
       'List',
       'LLL:EXT:personio/Resources/Private/Language/locallang_be.xlf:element_' . $pluginSignature . '_title',
@@ -22,7 +19,7 @@ defined('TYPO3') or die();
 
    // Show Plugin
    $pluginSignature = 'personio_show';
-   ExtensionUtility::registerPlugin(
+   \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
       'Personio',
       'Show',
       'LLL:EXT:personio/Resources/Private/Language/locallang_be.xlf:element_' . $pluginSignature . '_title',

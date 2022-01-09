@@ -1,25 +1,18 @@
 <?php
-
-use TYPO3\CMS\Core\Information\Typo3Version;
-use TYPO3\CMS\Core\Utility\GeneralUtility;
-use TYPO3\CMS\Core\Imaging\IconRegistry;
-use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
-use Pkd\Personio\Controller\PersonioController;
-
 defined('TYPO3_MODE') || die();
 
 (static function() {
-  $typo3Information = GeneralUtility::makeInstance(Typo3Version::class);
+  $typo3Information = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Information\Typo3Version::class);
 
   if ($typo3Information->getMajorVersion() === 10) {
     $icons = [
       'ext-personio-element-list' => 'ext-personio-element-list.svg',
       'ext-personio-element-show' => 'ext-personio-element-list.svg'
     ];    
-    $iconRegistry = GeneralUtility::makeInstance(
-      IconRegistry::class
+    $iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(
+      \TYPO3\CMS\Core\Imaging\IconRegistry::class
     );
-    $iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(IconRegistry::class);
+    $iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
     foreach ($icons as $identifier => $path) {
         if (!$iconRegistry->isRegistered($identifier)) {
             $iconRegistry->registerIcon(
@@ -31,27 +24,27 @@ defined('TYPO3_MODE') || die();
     }
   }
 
-  ExtensionUtility::configurePlugin(
+  \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
     'Personio',
     'list',
     [
-      PersonioController::class => 'list',
+      \Pkd\Personio\Controller\PersonioController::class => 'list',
     ],
     // non-cacheable actions
     [
-      PersonioController::class => '',
+      \Pkd\Personio\Controller\PersonioController::class => '',
     ]
   );
 
-  ExtensionUtility::configurePlugin(
+  \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
     'Personio',
     'show',
     [
-      PersonioController::class => 'show',
+      \Pkd\Personio\Controller\PersonioController::class => 'show',
     ],
     // non-cacheable actions
     [
-      PersonioController::class => '',
+      \Pkd\Personio\Controller\PersonioController::class => '',
     ]
   );
 
