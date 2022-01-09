@@ -34,7 +34,24 @@ Download and install the [extension][2] with the extension manager module.
 3) Create a show plugin on a page
 
 **Filtering**
-For filtering, the specification of the feed URL in the plugin is required. Please specify a feed URL and save the plugin first. After saving, the filters are obtained from the Personio feed.
+For filtering, the specification of the feed URL in the plugin is required. Please specify a feed URL and save the plugin first. After saving, the filters are obtained from the personio xml feed.
+
+**Route Enhancers**
+```
+routeEnhancers:
+  Personio:
+    limitToPages:
+      - 26
+    type: Extbase
+    extension: Personio
+    plugin: Show
+    routes:
+      -
+        routePath: '/{uid}'
+        _controller: 'Personio::show'
+    defaultController: 'Personio::show'
+```
+*26=Uid of your page with a show plugin
 
 [1]: https://getcomposer.org/
 [2]: https://extensions.typo3.org/extension/personio
