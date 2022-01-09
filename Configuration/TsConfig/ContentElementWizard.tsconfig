@@ -1,0 +1,22 @@
+mod.wizards.newContentElement.wizardItems.plugins {
+	elements {
+		personio_list {
+			iconIdentifier = ext-personio-element-list
+			title = LLL:EXT:personio/Resources/Private/Language/locallang_be.xlf:element_personio_list_title
+			description = LLL:EXT:personio/Resources/Private/Language/locallang_be.xlf:element_personio_list_description
+			tt_content_defValues {
+				CType = list
+				list_type = personio_list
+			}
+		}
+		personio_show {
+			iconIdentifier = ext-personio-element-show
+			title = LLL:EXT:personio/Resources/Private/Language/locallang_be.xlf:element_personio_show_title
+			description = LLL:EXT:personio/Resources/Private/Language/locallang_be.xlf:element_personio_show_description
+			tt_content_defValues {
+				CType = list
+				list_type = personio_show
+			}
+		}
+	}
+}

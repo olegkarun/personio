@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2022-01-01UTC00:00:00">
+        <header>
+            <authorName>Patrick Koschella</authorName>
+            <authorEmail>patrick@pkd.codes</authorEmail>
+        </header>
+        <body>
+            <trans-unit id="personio.message.no_items" xml:space="preserve">
+                <source>No job ads available at the moment</source>
+            </trans-unit>
+            <trans-unit id="personio.show.btn.back" xml:space="preserve">
+                <source>Back</source>
+            </trans-unit>
+            <trans-unit id="personio.show.btn.apply_now" xml:space="preserve">
+                <source>Apply now</source>
+            </trans-unit>
+            
+            <trans-unit id="label.office" xml:space="preserve">
+                <source>Office</source>
+            </trans-unit>
+            <trans-unit id="label.department" xml:space="preserve">
+                <source>Department</source>
+            </trans-unit>
+            <trans-unit id="label.recruitingCategory" xml:space="preserve">
+                <source>Recruiting Category</source>
+            </trans-unit>
+            <trans-unit id="label.name" xml:space="preserve">
+                <source>Name</source>
+            </trans-unit>
+            <trans-unit id="label.employmentType" xml:space="preserve">
+                <source>Employment Type</source>
+            </trans-unit>
+            <trans-unit id="label.seniority" xml:space="preserve">
+                <source>Seniority</source>
+            </trans-unit>
+            <trans-unit id="label.schedule" xml:space="preserve">
+                <source>Schedule</source>
+            </trans-unit>
+            <trans-unit id="label.yearsOfExperience" xml:space="preserve">
+                <source>Yars Of Experience</source>
+            </trans-unit>
+            <trans-unit id="label.keywords" xml:space="preserve">
+                <source>Keywords</source>
+            </trans-unit>
+            <trans-unit id="label.occupation" xml:space="preserve">
+                <source>Occupation</source>
+            </trans-unit>
+            <trans-unit id="label.occupationCategory" xml:space="preserve">
+                <source>Occupation Category</source>
+            </trans-unit>
+            <trans-unit id="label.createdAt" xml:space="preserve">
+                <source>Date Created</source>
+            </trans-unit>
+
+            <trans-unit id="employmentType.permanent" xml:space="preserve">
+                <source>Permanent</source>
+            </trans-unit>
+            <trans-unit id="seniority.entry-level" xml:space="preserve">
+                <source>Entry-level</source>
+            </trans-unit>
+            <trans-unit id="seniority.experienced" xml:space="preserve">
+                <source>Experienced</source>
+            </trans-unit>
+            <trans-unit id="schedule.full-time" xml:space="preserve">
+                <source>Full-time</source>
+            </trans-unit>
+            <trans-unit id="schedule.part-time" xml:space="preserve">
+                <source>Part-time</source>
+            </trans-unit>
+            <trans-unit id="schedule.temporary" xml:space="preserve">
+                <source>Temporary</source>
+            </trans-unit>
+            <trans-unit id="schedule.intern" xml:space="preserve">
+                <source>Intern</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

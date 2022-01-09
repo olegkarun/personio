@@ -1,0 +1,37 @@
+plugin.tx_personio {
+	mvc.callDefaultActionIfActionCantBeResolved = 1
+
+	view {
+		templateRootPaths {
+			0 = EXT:personio/Resources/Private/Templates/
+			1 = {$plugin.tx_personio.view.templateRootPath}
+		}
+
+		partialRootPaths {
+			0 = EXT:personio/Resources/Private/Partials/
+			1 = {$plugin.tx_personio.view.partialRootPath}
+		}
+
+		layoutRootPaths {
+			0 = EXT:personio/Resources/Private/Layouts/
+			1 = {$plugin.tx_personio.view.layoutRootPath}
+		}
+	}
+
+	settings {
+		feedUrl = {$plugin.tx_personio.settings.feedUrl}
+		language = {$plugin.tx_personio.settings.language}
+		listPageUid = {$plugin.tx_personio.settings.listPageUid}
+		showPageUid = {$plugin.tx_personio.settings.showPageUid}
+
+
+		translations {
+			schedule {
+			}
+			occupation {
+			}
+			occupation {
+			}
+		}
+	}
+}

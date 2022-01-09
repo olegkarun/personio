@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2022-01-01UTC00:00:00">
+        <header>
+            <authorName>Patrick Koschella</authorName>
+            <authorEmail>patrick@pkd.codes</authorEmail>
+        </header>
+        <body>
+            <trans-unit id="element_personio_list_title" xml:space="preserve">
+							<source>Personio: Job List</source>
+						</trans-unit>
+            <trans-unit id="element_personio_list_description" xml:space="preserve">
+							<source>List with job positions from Personio XML feed.</source>
+						</trans-unit>
+
+            <trans-unit id="element_personio_show_title" xml:space="preserve">
+							<source>Personio: Job Show</source>
+						</trans-unit>
+            <trans-unit id="element_personio_show_description" xml:space="preserve">
+							<source>Job position detail view from Personio XML feed.</source>
+						</trans-unit>
+            
+						<trans-unit id="flexforms_list_tab.settings" xml:space="preserve">
+							<source>Settings</source>
+						</trans-unit>
+						<trans-unit id="flexforms_settings.feedUrl" xml:space="preserve">
+							<source>Feed URL</source>
+						</trans-unit>
+            <trans-unit id="flexforms_settings.language" xml:space="preserve">
+							<source>Language</source>
+						</trans-unit>
+            <trans-unit id="flexforms_settings.language.0" xml:space="preserve">
+							<source>Default</source>
+						</trans-unit>
+						<trans-unit id="flexforms_settings.language.1" xml:space="preserve">
+							<source>de</source>
+						</trans-unit>
+						<trans-unit id="flexforms_settings.language.2" xml:space="preserve">
+							<source>en</source>
+						</trans-unit>
+						<trans-unit id="flexforms_settings.language.3" xml:space="preserve">
+							<source>fr</source>
+						</trans-unit>
+						<trans-unit id="flexforms_settings.language.4" xml:space="preserve">
+							<source>es</source>
+						</trans-unit>
+						<trans-unit id="flexforms_settings.language.5" xml:space="preserve">
+							<source>nl</source>
+						</trans-unit>
+						<trans-unit id="flexforms_settings.language.6" xml:space="preserve">
+							<source>it</source>
+						</trans-unit>
+						<trans-unit id="flexforms_settings.language.7" xml:space="preserve">
+							<source>pt</source>
+						</trans-unit>
+						<trans-unit id="flexforms_settings.listPageUid" xml:space="preserve">
+							<source>List Page Uid</source>
+						</trans-unit>
+						<trans-unit id="flexforms_settings.showPageUid" xml:space="preserve">
+							<source>Show Page Uid</source>
+						</trans-unit>
+
+						<trans-unit id="flexforms_list_tab.filter" xml:space="preserve">
+							<source>Filter</source>
+						</trans-unit>
+						<trans-unit id="flexforms_filter.office" xml:space="preserve">
+							<source>Office</source>
+						</trans-unit>
+						<trans-unit id="flexforms_filter.department" xml:space="preserve">
+							<source>Department</source>
+						</trans-unit>
+						<trans-unit id="flexforms_filter.employmentType" xml:space="preserve">
+							<source>Employment Type</source>
+						</trans-unit>
+						<trans-unit id="flexforms_filter.seniority" xml:space="preserve">
+							<source>Seniority</source>
+						</trans-unit>
+						<trans-unit id="flexforms_filter.schedule" xml:space="preserve">
+							<source>Schedule</source>
+						</trans-unit>
+						<trans-unit id="flexforms_filter.occupation" xml:space="preserve">
+							<source>Occupation</source>
+						</trans-unit>
+						<trans-unit id="flexforms_filter.occupationCategory" xml:space="preserve">
+							<source>Occupation Category</source>
+						</trans-unit>
+        </body>
+    </file>
+</xliff>

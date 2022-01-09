@@ -1,0 +1,47 @@
+{
+    "name": "pkd/personio",
+    "type": "typo3-cms-extension",
+    "description": "Personio extension, based on extbase & fluid for TYPO3 CMS",
+    "keywords": [
+        "TYPO3 CMS",
+        "extension",
+        "Personio",
+        "HR"
+    ],
+    "homepage": "https://pkd.codes",
+    "authors": [
+        {
+            "name": "Patrick Koschella",
+            "role": "Developer"
+        }
+    ],
+    "license": [
+        "GPL-2.0-or-later"
+    ],
+    "require": {
+        "typo3/cms-core": "^10.4 || ^11",
+        "symfony/serializer": "^5.4"
+    },
+    "require-dev": {
+        "php-coveralls/php-coveralls": "^2.1",
+        "typo3/cms-install": "^10.4 || ^11"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pkd\\Personio\\": "Classes/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Pkd\\Personio\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "typo3-ter/personio": "self.version"
+    },
+    "extra": {
+        "typo3/cms": {
+           "extension-key": "personio"
+        }
+    }
+}

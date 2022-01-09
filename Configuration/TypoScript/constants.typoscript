@@ -1,0 +1,20 @@
+plugin.tx_personio {
+    view {
+        # cat=plugin.tx_personio/file; type=string; label=Path to template root (FE)
+        templateRootPath = EXT:personio/Resources/Private/Templates/
+        # cat=plugin.tx_personio/file; type=string; label=Path to template partials (FE)
+        partialRootPath = EXT:personio/Resources/Private/Partials/
+        # cat=plugin.tx_personio/file; type=string; label=Path to template layouts (FE)
+        layoutRootPath = EXT:personio/Resources/Private/Layouts/
+    }
+	settings {
+        # cat=plugin.tx_personio/basic; type=string; label=Career site feed url i.e. https://mycompany.jobs.personio.de/xml
+		feedUrl = 
+        # cat=plugin.tx_personio/basic; type=string; label=Default language (Available languages: de, en, fr, es, nl, it, pt)
+        language = en
+        # cat=plugin.tx_personio/basic; type=string; label=Page uid of list page
+        listPageUid = 
+        # cat=plugin.tx_personio/basic; type=string; label=Page uid of detail page
+		showPageUid =
+	}
+}
