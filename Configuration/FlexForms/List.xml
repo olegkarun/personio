@@ -142,7 +142,7 @@
 								</config>
 						</TCEforms>
 					</settings.filter.schedule>
-					<!-- Cccupation -->
+					<!-- Occupation -->
 					<settings.filter.occupation>
 						<TCEforms>
 								<label>LLL:EXT:personio/Resources/Private/Language/locallang_be.xlf:flexforms_filter.occupation</label>
@@ -153,6 +153,17 @@
 								</config>
 						</TCEforms>
 					</settings.filter.occupation>
+					<!-- OccupationCategory -->
+					<settings.filter.occupationCategory>
+						<TCEforms>
+								<label>LLL:EXT:personio/Resources/Private/Language/locallang_be.xlf:flexforms_filter.occupationCategory</label>
+								<config>
+										<type>select</type>
+										<renderType>selectSingle</renderType>
+										<itemsProcFunc> Pkd\Personio\Hook\ItemsProcFunc->getFilterValues</itemsProcFunc>
+								</config>
+						</TCEforms>
+					</settings.filter.occupationCategory>
 				</el>
 			</ROOT>
 		</filter>
