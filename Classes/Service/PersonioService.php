@@ -4,10 +4,8 @@ namespace Pkd\Personio\Service;
 
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
-use TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController;
 use Psr\Http\Message\RequestFactoryInterface;
 use Symfony\Component\Serializer\Encoder\XmlEncoder;
-use Symfony\Component\Serializer\Serializer;
 
 /**
  * Personio Service
@@ -42,9 +40,12 @@ class PersonioService extends ActionController
     if ($response->getStatusCode() === 200
     && strpos($response->getHeaderLine('Content-Type'), 'text/xml') === 0) {
       $content = $response->getBody()->getContents();
-      $encoder = new XmlEncoder();
 
-      return $encoder->decode($content, 'array')['position'];
+      return json_decode(
+        json_encode(
+          simplexml_load_string($content, 'SimpleXMLElement', LIBXML_NOCDATA)
+        ),TRUE
+      )['position'];
     }
 
     return [];
