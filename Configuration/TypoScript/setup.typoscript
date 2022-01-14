@@ -23,8 +23,10 @@ plugin.tx_personio {
 		language = {$plugin.tx_personio.settings.language}
 		listPageUid = {$plugin.tx_personio.settings.listPageUid}
 		showPageUid = {$plugin.tx_personio.settings.showPageUid}
+	}
 
-		translations {
+	_LOCAL_LANG {
+		default {
 			schedule {
 			}
 			occupation {

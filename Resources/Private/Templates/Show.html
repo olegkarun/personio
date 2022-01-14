@@ -31,7 +31,7 @@
                   {f:translate(key: 'schedule.{item.schedule}')}
                 </f:then>
                 <f:else>
-                  {settings.translations.schedule.{item.schedule}}
+                  {item.schedule}
                 </f:else>
               </f:if>
             </dd>
@@ -44,24 +44,24 @@
   
             <dt class="col-sm-3"><f:translate key="label.occupation" /></dt>
             <dd class="col-sm-9 occupation-{item.occupation}">
-              <f:if condition="{f:translate(key: 'schedule.{item.occupation}')}">
+              <f:if condition="{f:translate(key: 'occupation.{item.occupation}')}">
                 <f:then>
                   {f:translate(key: 'occupation.{item.occupation}')}
                 </f:then>
                 <f:else>
-                  {settings.translations.occupation.{item.occupation}}
+                  {item.occupation}
                 </f:else>
               </f:if>
             </dd>
   
             <dt class="col-sm-3"><f:translate key="label.occupationCategory" /></dt>
             <dd class="col-sm-9 occupationCategory-{item.occupationCategory}">
-              <f:if condition="{f:translate(key: 'schedule.{item.occupationCategory}')}">
+              <f:if condition="{f:translate(key: 'occupationCategory.{item.occupationCategory}')}">
                 <f:then>
                   {f:translate(key: 'occupationCategory.{item.occupationCategory}')}
                 </f:then>
                 <f:else>
-                  {settings.translations.occupationCategory.{item.occupationCategory}}
+                  {item.occupationCategory}
                 </f:else>
               </f:if>
             </dd>
@@ -94,5 +94,6 @@
       </f:link.page>
     </f:if>
   </div>
+  <f:translate key="test" />
 </f:section>
 </html>

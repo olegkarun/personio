@@ -7,72 +7,72 @@
         </header>
         <body>
             <trans-unit id="personio.message.no_items" xml:space="preserve">
-                <source>No job ads available at the moment</source>
+                <target>Derzeit sind keine Stellenausschreibungen verfügbar.</target>
             </trans-unit>
             <trans-unit id="personio.show.btn.back" xml:space="preserve">
-                <source>Zurück</source>
+                <target>Zurück</target>
             </trans-unit>
             <trans-unit id="personio.show.btn.apply_now" xml:space="preserve">
-                <source>Jetzt bewerben</source>
+                <target>Jetzt bewerben</target>
             </trans-unit>
 
             <trans-unit id="label.office" xml:space="preserve">
-                <source>Büro</source>
+                <target>Büro</target>
             </trans-unit>
             <trans-unit id="label.department" xml:space="preserve">
-                <source>Abteilung</source>
+                <target>Abteilung</target>
             </trans-unit>
             <trans-unit id="label.recruitingCategory" xml:space="preserve">
-                <source>Rekrutierungskategorie</source>
+                <target>Rekrutierungskategorie</target>
             </trans-unit>
             <trans-unit id="label.name" xml:space="preserve">
-                <source>Name</source>
+                <target>Name</target>
             </trans-unit>
             <trans-unit id="label.employmentType" xml:space="preserve">
-                <source>Art der Beschäftigung</source>
+                <target>Art der Beschäftigung</target>
             </trans-unit>
             <trans-unit id="label.seniority" xml:space="preserve">
-                <source>Berufserfahrung</source>
+                <target>Berufserfahrung</target>
             </trans-unit>
             <trans-unit id="label.schedule" xml:space="preserve">
-                <source>Arbeitszeit</source>
+                <target>Arbeitszeit</target>
             </trans-unit>
             <trans-unit id="label.yearsOfExperience" xml:space="preserve">
-                <source>Berufserfahrung</source>
+                <target>Berufserfahrung</target>
             </trans-unit>
             <trans-unit id="label.keywords" xml:space="preserve">
-                <source>Keywords</source>
+                <target>Keywords</target>
             </trans-unit>
             <trans-unit id="label.occupation" xml:space="preserve">
-                <source>Tätigkeit</source>
+                <target>Tätigkeit</target>
             </trans-unit>
             <trans-unit id="label.occupationCategory" xml:space="preserve">
-                <source>Berufskategorie</source>
+                <target>Berufskategorie</target>
             </trans-unit>
             <trans-unit id="label.createdAt" xml:space="preserve">
-                <source>Erstellt am</source>
+                <target>Erstellt am</target>
             </trans-unit>
 
             <trans-unit id="employmentType.permanent" xml:space="preserve">
-                <source>Festanstellung</source>
+                <target>Festanstellung</target>
             </trans-unit>
             <trans-unit id="seniority.entry-level" xml:space="preserve">
-                <source>Einstiegsstufe</source>
+                <target>Einstiegsstufe</target>
             </trans-unit>
             <trans-unit id="seniority.experienced" xml:space="preserve">
-                <source>Erfahrene</source>
+                <target>Erfahrene</target>
             </trans-unit>
             <trans-unit id="schedule.full-time" xml:space="preserve">
-                <source>Vollzeit</source>
+                <target>Vollzeit</target>
             </trans-unit>
             <trans-unit id="schedule.part-time" xml:space="preserve">
-                <source>Teilzeit</source>
+                <target>Teilzeit</target>
             </trans-unit>
             <trans-unit id="schedule.temporary" xml:space="preserve">
-                <source>Temporär</source>
+                <target>Temporär</target>
             </trans-unit>
             <trans-unit id="schedule.intern" xml:space="preserve">
-                <source>Intern</source>
+                <target>Intern</target>
             </trans-unit>
         </body>
     </file>
