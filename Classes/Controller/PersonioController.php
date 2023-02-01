@@ -79,7 +79,8 @@ class PersonioController extends ActionController
 
     $this->view->assign('item', $item);
     $this->view->assign('feedUrl', parse_url($this->feedUrl));
-
+    
+    // @tofo rebuild:nextline https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ApiOverview/Seo/PageTitleApi.html
     //$GLOBALS['TSFE']->page['title'] = $item['name'];
   }
 
