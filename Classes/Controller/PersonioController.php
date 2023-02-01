@@ -80,7 +80,7 @@ class PersonioController extends ActionController
     $this->view->assign('item', $item);
     $this->view->assign('feedUrl', parse_url($this->feedUrl));
 
-    $GLOBALS['TSFE']->page['title'] = $item['name'];
+    //$GLOBALS['TSFE']->page['title'] = $item['name'];
   }
 
   /**
